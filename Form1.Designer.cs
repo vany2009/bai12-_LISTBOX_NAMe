@@ -35,6 +35,8 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btninsert = new System.Windows.Forms.Button();
             this.txtindext = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnADD
@@ -96,11 +98,33 @@
             this.txtindext.Size = new System.Drawing.Size(100, 20);
             this.txtindext.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(566, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "thêm vào LIST";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(566, 116);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "thêm vào LISTBOX";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtindext);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lstNames);
@@ -110,6 +134,7 @@
             this.Controls.Add(this.btnADD);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +149,8 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btninsert;
         private System.Windows.Forms.TextBox txtindext;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
